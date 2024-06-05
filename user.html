@@ -36,21 +36,32 @@
             </div>
         </div>
     </nav>
+    <!-- table to put the data in  -->
+    <h1>Users</h1>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- User rows will be appended here -->
+        </tbody>
 
 
-    <div>
-        <label for="userId">User ID:</label>
-        <input type="text" id="userIdInput">
-        <button id="userIdButton"> Lookup User </button>
-    </div>
+    
 
+        <script src="scripts/user.js"></script>
+        <!-- scripts for bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 
-    <div id="userResults"></div>
-
-    <!-- scripts for bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
