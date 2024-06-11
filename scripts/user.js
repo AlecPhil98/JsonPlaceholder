@@ -1,5 +1,13 @@
 "use strict"
 
+window.onload=()=>{
+
+// Call the function to fetch and display users
+fetchUsers();
+
+}
+
+
 // Function to fetch user data 
 async function fetchUsers() {
     try {
@@ -46,5 +54,3 @@ async function fetchUsers() {
     }
 }
 
-// Call the function to fetch and display users
-fetchUsers();

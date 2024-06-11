@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Todo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="todo.html">Todo</a>
@@ -39,32 +39,24 @@
             </div>
         </div>
     </nav>
-    <!-- table to put the data in  -->
-    <h1>Users</h1>
-    <table id="userTable">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>Company</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- User rows will be appended here -->
-        </tbody>
 
+    <!-- inpuit for to give us a form id  -->
+    <div>
+        <label for="CharacterId">Rick and Morty ID:</label>
+        <input type="text" id="todoIdInput">
+        <button id="CharacterId"> Lookup Character </button>
+    </div>
 
+    <!-- to display resuilts for the todo we found -->
+    <div id="RickAndMortyresults"></div>
+
+    <!-- link to scripts ex3.js -->
+    <script src="scripts/ex3.js"></script>
     
-
-        <script src="scripts/user.js"></script>
-        <!-- scripts for bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-
+    <!-- scripts for bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
